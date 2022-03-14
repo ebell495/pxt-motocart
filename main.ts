@@ -688,7 +688,7 @@ updateSolarCharge()
         }
     }
     
-    function getMazeBlock(x:number, y:number, z:number):string {
+    export function getMazeBlock(x:number, y:number, z:number):string {
         if (isClassroom) {
             // convert coordinates to block coordinates
             let xi = Math.floor(x);
