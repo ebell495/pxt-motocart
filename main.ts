@@ -1227,4 +1227,9 @@ updateSolarCharge()
         }
         return dir;
     }
+
+    export function debug():string {
+        return "x="+xpos+" y="+ypos+" z="+zpos+" dir="+dir + " at_stop=" + isAtStop() + " block_under=" + getMazeBlock(xpos, ypos-1, zpos);
+    }
+    }
 }
