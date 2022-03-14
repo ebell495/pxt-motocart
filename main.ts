@@ -923,6 +923,7 @@ updateSolarCharge()
      */
     //% block
     export function isAtStop (): boolean {
+        console.log(getMazeBlock(xpos,ypos-1,zpos));
         return getMazeBlock(xpos,ypos-1,zpos)!='_';
     }
 
