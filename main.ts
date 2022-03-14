@@ -297,6 +297,7 @@ namespace motocart {
     function systemMessage(msg:string):void {
         player.execute("title @s actionbar "+msg);
         player.say(msg);
+        player.say("Working")
     };
 	
     /** this helper function determines if the cart is currently within its lane
