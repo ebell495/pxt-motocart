@@ -433,6 +433,11 @@ namespace motocart {
         return false;
     }
 
+    //% block
+    export function testFunc():void {
+
+    }
+
     /**
      * Pause for a short period of time.  This function should only be used at stop signs.
      */
@@ -1232,7 +1237,8 @@ updateSolarCharge()
      * Return some information about the cart.
      */
     //% block
-    export function debug():string {
+    export function d():string {
         return "x="+xpos+" y="+ypos+" z="+zpos+" dir="+dir + " at_stop=" + isAtStop() + " block_under=" + getMazeBlock(xpos, ypos-1, zpos);
+        //return "";
     }
 }
