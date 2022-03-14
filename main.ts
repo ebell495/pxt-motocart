@@ -292,7 +292,8 @@ namespace motocart {
      * actionbar text persistent on the screen.
      */
     systemMessage("Ready to Roll");
-    console.log("GO")
+    // console.log("GO")
+    player.say("Test");
     function systemMessage(msg:string):void {
         player.execute("title @s actionbar "+msg);
         player.say(msg);
